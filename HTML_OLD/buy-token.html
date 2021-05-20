@@ -1,0 +1,693 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="../assets/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="../assets/libs/%40fancyapps/fancybox/dist/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="../assets/libs/aos/dist/aos.css">
+    <link rel="stylesheet" href="../assets/libs/choices.js/public/assets/styles/choices.min.css">
+    <link rel="stylesheet" href="../assets/libs/flickity-fade/flickity-fade.css">
+    <link rel="stylesheet" href="../assets/libs/flickity/dist/flickity.min.css">
+    <link rel="stylesheet" href="../assets/libs/highlightjs/styles/vs2015.css">
+    <link rel="stylesheet" href="../assets/libs/jarallax/dist/jarallax.css">
+    <link rel="stylesheet" href="../assets/libs/quill/dist/quill.core.css" />
+
+
+    <link href='../../api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.css' rel='stylesheet' />
+
+
+    <link rel="stylesheet" href="assets/css/theme.min.css">
+    <link rel="stylesheet" href="assets/js/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>BSCS | Buy ICO</title>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+
+</head>
+
+<style>
+    .navbar {
+        -webkit-transition: all .2s ease-in-out;
+        transition: all .2s ease-in-out;
+        -webkit-transition-property: background-color, color;
+        transition-property: background-color, color;
+        z-index: 1030;
+        position: fixed;
+        width: 100%;
+        background: #21211dc9;
+    }
+    
+    .navbar-brand {
+        display: inline-block;
+        padding-top: .15rem;
+        padding-bottom: 1.15rem;
+        margin-right: 0;
+        font-size: 1.5rem;
+        line-height: inherit;
+        white-space: nowrap;
+    }
+    
+    .navbar-collapse .navbar-toggler {
+        position: absolute;
+        top: 5px;
+        right: 1rem;
+        z-index: 1;
+    }
+    
+    .jfgTmU {
+        position: relative;
+        max-width: 436px;
+        width: 100%;
+        z-index: 5;
+    }
+    
+    .kmMvoB {
+        background-color: rgb(43, 42, 40);
+        border-radius: 32px;
+        box-shadow: rgb(25 19 38 / 10%) 0px 2px 12px -8px, rgb(25 19 38 / 5%) 0px 1px 1px;
+        color: rgb(255, 244, 227);
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .esbyIi {
+        position: relative;
+    }
+    
+    .darEnv {
+        border-bottom: 1px solid rgb(82, 75, 99);
+        padding: 24px;
+    }
+    
+    .ggLwEG {
+        display: flex;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    
+    .kQbLAY {
+        flex: 1 1 0%;
+    }
+    
+    .kDYGgd {
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 1.1;
+    }
+    
+    .jjFbze {
+        color: rgb(255, 244, 227);
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.5;
+        margin-bottom: 8px;
+    }
+    
+    .gJEdKo {
+        color: rgb(253, 210, 132);
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    .fwjcww {
+        padding: 0px;
+        width: 48px;
+    }
+    
+    .dWTJWy {
+        -webkit-box-align: center;
+        align-items: center;
+        border: 0px;
+        border-radius: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        -webkit-box-pack: center;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        opacity: 1;
+        outline: 0px;
+        transition: background-color 0.2s ease 0s;
+        height: 48px;
+        padding: 0px 24px;
+        background-color: transparent;
+        color: rgb(56, 242, 188);
+        box-shadow: none;
+    }
+    
+    .hufIwr {
+        fill: currentcolor;
+        flex-shrink: 0;
+    }
+    
+    .bVWwBE {
+        fill: rgb(255, 244, 227);
+        flex-shrink: 0;
+    }
+    
+    .domPRl {
+        padding: 24px;
+    }
+    
+    .kubwGS {
+        display: grid;
+        grid-auto-rows: auto;
+        row-gap: 12px;
+    }
+    
+    .eORiCX {
+        display: flex;
+        flex-flow: column nowrap;
+        position: relative;
+        border-radius: 20px;
+        background-color: rgb(33, 33, 29);
+        z-index: 1;
+    }
+    
+    .dRkbRe {
+        border-radius: 16px;
+        box-shadow: rgb(74 74 104 / 10%) 0px 2px 2px -1px inset;
+    }
+    
+    .eAbILx {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        color: rgb(255, 244, 227);
+        font-size: 0.75rem;
+        line-height: 1rem;
+        padding: 0.75rem 1rem 0px;
+    }
+    
+    .inCwUZ {
+        -webkit-box-pack: justify;
+        justify-content: space-between;
+    }
+    
+    .hWkaVx {
+        width: 100%;
+        display: flex;
+        padding: 0px;
+        -webkit-box-align: center;
+        align-items: center;
+    }
+    
+    .cchpWM {
+        box-sizing: border-box;
+        margin: 0px;
+        min-width: 0px;
+    }
+    
+    .cRLXro {
+        color: rgb(255, 244, 227);
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    .cRLXro {
+        color: rgb(255, 244, 227);
+        font-weight: 400;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    
+    .bQNbrd {
+        display: flex;
+        flex-flow: row nowrap;
+        -webkit-box-align: center;
+        align-items: center;
+        padding: 0.75rem 0.75rem 0.75rem 1rem;
+    }
+    
+    .eyCBWg {
+        color: rgb(255, 244, 227);
+        width: 0px;
+        position: relative;
+        font-weight: 500;
+        outline: none;
+        border: none;
+        flex: 1 1 auto;
+        background-color: #2b2a28;
+        font-size: 16px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: 5px;
+        appearance: textfield;
+        border-radius: 10px;
+    }
+    
+    .kffJUP {
+        -webkit-box-align: center;
+        align-items: center;
+        border: 0px;
+        border-radius: 16px;
+        cursor: pointer;
+        display: inline-flex;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        -webkit-box-pack: center;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        opacity: 1;
+        outline: 0px;
+        transition: background-color 0.2s ease 0s;
+        height: 48px;
+        padding: 0px 24px;
+        background-color: transparent;
+        color: rgb(56, 242, 188);
+        box-shadow: none;
+    }
+    
+    .rhuht {
+        margin-top: 1rem;
+        text-align: center;
+    }
+    
+    .btn-buy {
+        -webkit-box-align: center;
+        align-items: center;
+        border: 0px;
+        border-radius: 16px;
+        box-shadow: rgb(14 14 44 / 40%) 0px -1px 0px 0px inset;
+        display: inline-flex;
+        font-family: inherit;
+        font-size: 16px;
+        font-weight: 600;
+        -webkit-box-pack: center;
+        justify-content: center;
+        letter-spacing: 0.03em;
+        line-height: 1;
+        opacity: 1;
+        outline: 0px;
+        transition: background-color 0.2s ease 0s;
+        height: 40px;
+        padding: 0px 45px;
+        background-color: rgb(253 210 132);
+        color: #46445c;
+    }
+    
+    .table-dark {
+        color: rgb(255, 244, 227);
+        background-color: #2b2a28;
+        border-radius: 15px;
+    }
+    
+    .table-response {
+        flex-wrap: wrap;
+        margin-right: -5px;
+        margin-left: -5px;
+        display: block;
+        overflow-x: auto;
+    }
+    
+    h2.font-weight-bold.title-history {
+        color: #FDD284;
+        margin: 20px;
+    }
+    
+    .btn {
+        line-height: 0.6;
+    }
+    
+    .sc-gsTCUz.balance {
+        color: #fdd284;
+        font-size: 18px;
+    }
+    
+    .btn-withdraw {
+        color: #21282dd4;
+        background-color: #fdd284;
+        box-shadow: none;
+    }
+    
+    .table-dark td,
+    .table-dark th,
+    .table-dark thead th {
+        border-color: #464646;
+    }
+</style>
+
+<body data-aos-easing="ease-out-quad" data-aos-duration="700" data-aos-delay="0" style="background-color: rgb(33, 33, 29);">
+
+     
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="container">
+
+            <!-- Brand -->
+            <a class="navbar-brand" href="/">
+                <img src="assets/img/logo-dark.png" height="40px" class="navbar-brand-img" alt="...">
+            </a>
+
+            <!-- Toggler -->
+            <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+            <!-- Collapse -->
+            <div class="navbar-collapse collapse" id="navbarCollapse">
+
+                <!-- Toggler -->
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <i class="fe fe-x"></i>
+            </button>
+
+                <!-- Navigation -->
+
+
+                <!-- Button -->
+                <a class="navbar-btn btn btn-sm btn-primary lift ml-auto" href="#!">
+              Connect
+            </a>
+
+            </div>
+
+        </div>
+    </nav>
+    <section class="section-border border-primary">
+        <div class="container d-flex flex-column">
+            <div class="row align-items-center justify-content-center no-gutters" style="padding-top: 100px;">
+                <div class="col-12 col-md-5 col-lg-4">
+
+                     
+                    <div class="mb-0 font-weight-bold text-center">
+                        <a class="navbar-brand" href="/">
+                            <!-- <img src="assets/img/logo-dark.png" class="navbar-brand-img" alt="..."> -->
+                        </a>
+                    </div>
+
+                     
+                    <p class="mb-6 text-center text-muted">
+
+                    </p>
+
+                    
+                    <form>
+
+                        <div class="sc-dQppl kmMvoB sc-hYAvag jfgTmU">
+                            <div id="swap-page" class="sc-dRPiIx esbyIi">
+                                <div class="sc-fXvjs darEnv">
+                                    <div class="sc-eCssSg sc-jSgupP eNboqf ggLwEG">
+                                        <div class="sc-bTvRPi sc-hOqqkJ sc-dtwoBo cchpWM hWkaVx inCwUZ">
+                                            <div font-size="14px" color="text" class="sc-gsTCUz">1BNB
+                                            </div>
+                                            <div font-size="14px" color="text" class="sc-gsTCUz" style="display: inline;">≈ 10000 BSCD</div>
+                                        </div>
+                                        <button class="sc-dlfnbm dWTJWy sc-hKgILt fwjcww" title="Recent transactions" scale="md">
+                                            <img src="assets/img/logobscs.png" class="navbar-brand-img" style="height: 30px;" alt="..."></button>
+                                    </div>
+                                </div>
+                                <div class="sc-bqyKva domPRl">
+                                    <div class="sc-eLgOdN kubwGS">
+                                        <div id="swap-currency-input" class="sc-fybufo eORiCX">
+                                            <div class="sc-iWFSnp dRkbRe">
+                                                <div class="sc-dkmKpi eAbILx">
+                                                    <div class="sc-bTvRPi sc-hOqqkJ sc-dtwoBo cchpWM hWkaVx inCwUZ">
+                                                        <div font-size="14px" color="text" class="sc-gsTCUz cRLXro">Enter the number
+                                                        </div>
+                                                        <div font-size="14px" color="text" class="sc-gsTCUz cRLXro" style="display: inline; cursor: pointer;">Balance: 0</div>
+                                                    </div>
+                                                </div>
+                                                <div class="sc-kmASHI bQNbrd"><input class="sc-aKZfe eyCBWg token-amount-input" inputmode="decimal" title="Token Amount" autocomplete="off" autocorrect="off" type="text" pattern="^[0-9]*[.,]?[0-9]*$" placeholder="0.0" minlength="1" maxlength="79"
+                                                        spellcheck="false" value=""><button class="sc-dlfnbm kffJUP" scale="md">MAX</button>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <div class="sc-XhUPp ezkaCf">
+
+                                        </div>
+                                    </div>
+                                    <div class="sc-JAcuL rhuht">
+                                        <button class="sc-dlfnbm btn-buy " scale="md">Buy</button>
+                                    </div>
+                                    <div class="sc-iWFSnp dRkbRe">
+                                        <div class="sc-dkmKpi eAbILx">
+                                            <div class="sc-bTvRPi sc-hOqqkJ sc-dtwoBo cchpWM hWkaVx inCwUZ">
+                                                <div font-size="14px" color="text" class="sc-gsTCUz balance">Balance :
+                                                </div>
+                                                <div font-size="14px" color="text" class="sc-gsTCUz balance" style="display: inline;">9999 BNB</div>
+                                            </div>
+                                        </div>
+                                        <div class="sc-dkmKpi eAbILx">
+                                            <div class="sc-bTvRPi sc-hOqqkJ sc-dtwoBo cchpWM hWkaVx inCwUZ">
+                                                <div font-size="14px" color="text" class="sc-gsTCUz balance">Total BSCS :
+                                                </div>
+                                                <div font-size="14px" color="text" class="sc-gsTCUz balance" style="display: inline;">1,0000,0000 LOCK</div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="jss95" style="padding-top: 50px;">
+                <div class="jss96" style="opacity: 1; transition: opacity 1000ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;">
+                    <div class="jss101">
+                        <div class="jss102">
+                            <div class="jss103"><img class="jss104" alt="pool" src="assets/img/logobscs.png">
+                                <div class="jss105">
+                                    <h1 class="MuiTypography-root jss106 MuiTypography-h1">START Public Presale</h1>
+                                    <h5 class="MuiTypography-root jss107 MuiTypography-h5">Token Address</h5>
+                                    <a class="jss127" href="https://bscscan.com/token/0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d" target="_blank" rel="noopener noreferrer">
+                                        <h5 class="MuiTypography-root jss108 MuiTypography-h5">0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d</h5>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="jss109">
+                                <div class="jss110" style="background-color: #FAC668;font-weight: bold;color: #2b2a28;" id="countdowntime">4d 17h 43m 59s </div>
+                                <h5 class="MuiTypography-root jss111 MuiTypography-h5">IDO time: March 20, 2021 09:00 AM</h5>
+                            </div>
+                        </div>
+                        <div class="jss112">
+                            <div class="jss113">
+                                <div class="jss114">
+                                    <h5 class="MuiTypography-root jss115 MuiTypography-h5">0.00353 BNB per Token</h5>
+                                    <h5 class="MuiTypography-root jss116 MuiTypography-h5">0.000 BNB Raised</h5>
+                                </div>
+
+                            </div>
+                            <div class="jss119">
+                                <div class="jss120" style="background-color: #FAC668; width: 35%;"></div>
+                            </div>
+                            <div class="jss121">
+                                <h5 class="MuiTypography-root jss122 MuiTypography-h5">0.000% (Min 30.864%)</h5>
+                                <h5 class="MuiTypography-root jss122 MuiTypography-h5">0.000 /&nbsp;486.000 BNB</h5>
+                            </div>
+                        </div>
+                        <div class="jss123">
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Softcap</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">200 BNB</h5>
+                            </div>
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Min Per Wallet</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">0.2 BNB</h5>
+                            </div>
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Presale Rate</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">0.00353 BNB</h5>
+                            </div>
+
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Hardcap</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">1000 BNB</h5>
+                            </div>
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Max Per Wallet</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">4.00 BNB</h5>
+                            </div>
+
+                            <div class="jss124">
+                                <h5 class="MuiTypography-root jss125 MuiTypography-h5">Liquidity Lock Duration</h5>
+                                <h5 class="MuiTypography-root jss126 MuiTypography-h5">365 days</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <p class="mb-0 font-size-sm text-center text-muted">
+                Back to <a class="MuiTypography-root jss108 MuiTypography-h5" href="/">home page</a>.
+            </p>
+            <div class="row">
+                <h2 class="font-weight-bold title-history">
+                    History 1
+                </h2>
+            </div>
+            <div class="table-response">
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Price change (24hrs)</th>
+                            <th scope="col">Month</th>
+                            <th scope="col">Action</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1,000,000</td>
+                            <td>$1.05</td>
+                            <td>2.51%</td>
+                            <td>March</td>
+                            <td><button class="btn btn-withdraw">Withdraw</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>2,000,000</td>
+                            <td>$1.25</td>
+                            <td>1.51%</td>
+                            <td>April-2021</td>
+                            <td><button class="btn btn-withdraw">Withdraw</button></td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>3,000,000</td>
+                            <td>$1.35</td>
+                            <td>4.51%</td>
+                            <td>May</td>
+                            <td><button class="btn btn-withdraw">Withdraw</button></td>
+
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="row">
+                <h2 class="font-weight-bold title-history">
+                    History 2
+                </h2>
+            </div>
+            <div class="table-response">
+
+                <table class="table table-dark">
+                    <thead>
+                        <tr>
+                            <th scope="col">Id</th>
+                            <th scope="col">Amount</th>
+                            <th scope="col">Price</th>
+                            <th scope="col">Price change (24hrs)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">1</th>
+                            <td>1,000,000</td>
+                            <td>$1.05</td>
+                            <td>2.51%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">2</th>
+                            <td>2,000,000</td>
+                            <td>$1.25</td>
+                            <td>1.51%</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">3</th>
+                            <td>3,000,000</td>
+                            <td>$1.35</td>
+                            <td>4.51%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+             
+        </div>
+
+         
+    </section>
+
+    <!-- JAVASCRIPT
+    ================================================== -->
+    <!-- Libs JS -->
+    <script src="./assets/libs/jquery/dist/jquery.min.js"></script>
+    <script src="./assets/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./assets/libs/@fancyapps/fancybox/dist/jquery.fancybox.min.js"></script>
+    <script src="./assets/libs/aos/dist/aos.js"></script>
+    <script src="./assets/libs/choices.js/public/assets/scripts/choices.min.js"></script>
+    <script src="./assets/libs/countup.js/dist/countUp.min.js"></script>
+    <script src="./assets/libs/dropzone/dist/min/dropzone.min.js"></script>
+    <script src="./assets/libs/flickity/dist/flickity.pkgd.min.js"></script>
+    <script src="./assets/libs/flickity-fade/flickity-fade.js"></script>
+    <script src="./assets/libs/highlightjs/highlight.pack.min.js"></script>
+    <script src="./assets/libs/imagesloaded/imagesloaded.pkgd.min.js"></script>
+    <script src="./assets/libs/isotope-layout/dist/isotope.pkgd.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-video.min.js"></script>
+    <script src="./assets/libs/jarallax/dist/jarallax-element.min.js"></script>
+    <script src="./assets/libs/quill/dist/quill.min.js"></script>
+    <script src="./assets/libs/smooth-scroll/dist/smooth-scroll.min.js"></script>
+    <script src="./assets/libs/typed.js/lib/typed.min.js"></script>
+
+    <!-- Map -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v0.53.0/mapbox-gl.js"></script>
+
+    <!-- Theme JS -->
+    <script src="./assets/js/theme.min.js"></script>
+    <script>
+        var countDownDate = new Date("Mar 20, 2021 09:00:00").getTime();
+
+        var x = setInterval(function() {
+
+            var now = new Date().getTime();
+
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("countdowntime").innerHTML = days + "d " + hours + "h " +
+                minutes + "m " + seconds + "s ";
+
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdowntime").innerHTML = "BUY NOW";
+            }
+        }, 1000);
+    </script>
+
+
+</body>
+
+
+
+</html>

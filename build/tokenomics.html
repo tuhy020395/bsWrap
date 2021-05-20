@@ -1,0 +1,797 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="/css/theme.min.css?v=0.1.1">
+    <link rel="stylesheet" href="/js/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>BSCS | Tokenomics</title>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <SCRIPT LANGUAGE="Javascript">
+        $(document).ready(function () {
+            $("a[href*='#']:not([href='#])").click(function () {
+                let target = $(this).attr("href");
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                event.preventDefault();
+            });
+        });</SCRIPT>
+</head>
+
+<style>
+    .navbar {
+        transition: all .2s ease-in-out;
+        transition-property: background-color, color;
+        z-index: 1030;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff !important;
+        box-shadow: 0 3px 8px 0 rgb(116 129 141 / 10%);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #161c2d;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+</style>
+
+<body style="padding-top: 84px;">
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" id="myHeader">
+        <div class="container">
+
+
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo-text-dark.png" class="navbar-brand-img" alt="...">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" target="_top"
+                            data-toggle="dropdown-item" href="/" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" target="_top" data-toggle="dropdown-item"
+                            href="/introduction" aria-haspopup="true" aria-expanded="false">
+                            Introduction
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/tokenomics" aria-haspopup="true" aria-expanded="false">
+                            Tokenomics
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" target="_top"
+                            data-toggle="dropdown-item" href="/roadmap" aria-haspopup="true" aria-expanded="false">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/faq" aria-haspopup="true" aria-expanded="false">
+                            Frequently Asked Questions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col">
+  
+              <!-- Breadcrumb -->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <span class="text-white">
+                    Docs
+                  </span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span class="text-white">
+                    Tokenomics
+                  </span>
+                </li>
+              </ol>
+  
+            </div>
+            <div class="col-auto">
+  
+              <!-- Toggler -->
+              <div class="navbar-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    <div class="collapse d-lg-block" id="sidenavCollapse">
+                        <div class="py-7 py-lg-9 px-lg-7">
+
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                BSC Station Introduction
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Introduction">Introduction</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/roadmap">Roadmap</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Tokenomics
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/tokenomics">BSCS</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Exchange
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/BSCSwap-Exchange">How to Trade on the BSC Station</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-trustwallet">Adding Liquidity on TrustWallet</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-metamask">Adding Liquidity on MetaMask</a>
+                                </li>
+                                <li class="list-item">
+                                     <a class="list-link" target="_top" href="/remove-liquidity">Remove Liquidity</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                NFT (Non-fungible token
+                            </h6>
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/artworks-upload">How to mint NFT</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Other Product
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link"  target="_top" href="/start-pools">Startpool</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Analytics">Analytics</a>
+                                </li>
+                            </ul>
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                General FAQ
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/faq">General FAQ</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Use-MetaMask">How to use MetaMask on BSC Station</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Communities">Social Accounts & Communities</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Hiring
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Frontend-software-engineer">Frontend Software Engineer - JavaScript
+                                        / Typescript / React</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/solidity-engineer">Solidity Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/technical-writer">Technical Writer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/senior-qa-engineer">Blockchain QA Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/ux-ui-designer">UX/UI Designer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+
+                    <h1 class="mb-1">
+                        BSCStation Tokenomics (BSCS - BEP20)
+                    </h1>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        BSCS Token (BSCS - BEP20)
+                    </h3>
+                    <p class="text-gray-700">
+                        BSC Station has only raised the most necessary funds for Product Development and to help the
+                        BSCS ecosystem grow sustainably, bringing more value to users through our mainstream products.
+                    </p>
+                    <p class="text-gray-700">All allocation for Team member, Advisors, Partner and Foundation tokens are
+                        locked for at least 1 year, the rest of the tokens are allocated to the community via Token
+                        sale, Bounty and Airdrop, Liquidity Provision and rewards as well as Marketing activities.</p>
+
+                    <hr class="border-gray-300 my-6">
+                   
+                   
+
+                    <div class="container" id="bscs">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-md-6">
+            
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+            
+            
+                                        <div class="p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                            <img src="/img/logobscs.png" class="img-fluid" alt="...">
+                                        </div>
+            
+                                    </div>
+            
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h2>
+                                    Token Specification (BSCS - BEP20)
+                                </h2>
+                                <ul class="text-gray-700">
+                                    <li>
+                                        Name: BSCS token
+                                    </li>
+                                    <li>
+                                        Symbol: BSCS
+                                    </li>
+                                    <li>
+                                        Total supply: 500,000,000 BSCS
+                                    </li>
+            
+                                    <li>
+                                        Standard: BEP-20
+                                    </li>
+                                    <li>
+                                        Precision: 18
+                                    </li>
+                                    <li>
+                                        Network: Binance Smart Chain
+                                    </li>
+                                    <li>
+                                        Smart Contract Address: <a href="https://bscscan.com/token/0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d" target="_blank">0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d</a>
+                                    </li>
+                                </ul>
+            
+                            </div>
+                           
+                            
+                        </div>
+            
+                    </div>
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold" id="bscsa">Token Allocation (BSCS - BEP20)</h3>
+                    <p class="text-gray-700">
+                    </p>
+                    <ul class="text-gray-700">
+
+                        <li>
+                            Seed sale (12%): 60,000,000 BSCS
+                        </li>
+                        <li>
+                            Private-sale (25%): 125,000,000 BSCS
+                        </li>
+                        <li>
+                            IDO (1.6%): 8,000,000 BSCS
+                        </li>
+                        <li>
+                            Farming / staking reward (12%): 60,000,000 BSCS
+                        </li>
+                        <li>
+                            Team (15%): 75,000,000 BSCS
+                        </li>
+                        <li>
+                            Marketing (8.4%): 42,000,000 BSCS
+                        </li>
+                        <li>
+                            Advisor & Partnership (5%): 25,000,000 BSCS
+                        </li>
+                        <li>
+                            Liquidity (10%): 50,000,000 BSCS
+                        </li>
+                        <li>
+                            Ecosystem (11%): 55,000,000 BSCS
+                        </li>
+                    </ul>
+                    <figure class="highcharts-figure">
+                        <div id="Allocation"></div>
+                    </figure>
+
+
+                   
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold" id="gulpFileIncludes">
+                        BSCS Market Cap and Release Schedule
+                    </h3>
+                    <p class="text-gray-700" id="MarketCap">
+                        Market Cap
+                    </p>
+                    <div class="table-response">
+                        <table class="table table-bordered">
+                            <thead style="background: #e4d354;">
+                                <tr>
+                                    <th scope="col">Round</th>
+                                    <th scope="col">Token price</th>
+                                    <th scope="col">Token sale</th>
+                                    <th scope="col">Raised</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Fully Diluted Market</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Seed</th>
+                                    <td>$0.0025</td>
+                                    <td>60,000,000</td>
+                                    <td>$150,000</td>
+                                    <td>Mar-2021</td>
+                                    <td>Finished</td>
+                                    <td>$1,250,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Private</th>
+                                    <td>$0.005</td>
+                                    <td>125,000,000</td>
+                                    <td>$625,000</td>
+                                    <td>Mar-2021</td>
+                                    <td>Finished</td>
+                                    <td>$2,500,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Public</th>
+                                    <td>$0.01</td>
+                                    <td>8,000,000</td>
+                                    <td>$80,000</td>
+                                    <td>April-2021</td>
+                                    <td>Finished</td>
+                                    <td>$5,000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="TokenReleaseSchedule">
+                        Token Release Schedule
+                    </p>
+                    <div class="table-response">
+                        <table class="table table-bordered">
+                            <thead style="background: #e4d354;">
+                                <tr>
+                                    <th scope="col">Allocation</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Percentage</th>
+                                    <th scope="col">Raised</th>
+                                    <th scope="col">Descriptions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Seed</th>
+                                    <td>60,000,000</td>
+                                    <td>12</td>
+                                    <td>$150,000</td>
+                                    <td>Unlock 10% before listing, 2 month cliff, then linear till the 12th month</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Private</th>
+                                    <td>125,000,000</td>
+                                    <td>25</td>
+                                    <td>$625,000</td>
+                                    <td>
+                                        Unlock 15% before listing, 2 month cliff, then linear till the 12th month</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Public</th>
+                                    <td>8,000,000</td>
+                                    <td>1.6</td>
+                                    <td>$80,000</td>
+                                    <td>Unlock 100% before listing.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Farming / staking</th>
+                                    <td>60,000,000</td>
+                                    <td>12</td>
+                                    <td></td>
+                                    <td>7.5% per quarter, start unlock when  Staking program goes live </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Marketing</th>
+                                    <td>42,000,000</td>
+                                    <td>8.4</td>
+                                    <td></td>
+                                    <td>
+                                        Unlock 10% before listing, then linear two yrs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Liquidity</th>
+                                    <td>50,000,000</td>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td>Unlock 20% before listing, then 6.67% monthly over 12 months.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ecosystem</th>
+                                    <td>55,000,000</td>
+                                    <td>11</td>
+                                    <td></td>
+                                    <td>Linear 5 yrs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Team</th>
+                                    <td>75,000,000</td>
+                                    <td>15</td>
+                                    <td></td>
+                                    <td>
+                                        Lock 06 months, then 10% per quarter.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Advisor & Partnership</th>
+                                    <td>25,000,000</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>
+                                        Lock 06 months, then 25% per quarter.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="BSCSStationHolderBenefits">
+                        BSC Station Holder Benefits
+                    </p>
+                    <ul class="text-gray-700">
+                        <p class="text-gray-700">
+                            The benefits of BSCS Hodler? Here is a quick overview.
+                        </p>
+                        <ul>
+                            <li>
+                                <code>GET FREE TOKEN BSC Swap</code> - Hodlers holding BSCS token will receive another
+                                free token
+                            </li>
+                            <li>
+                                <code>UNLOCK NFT AUCTION</code> - BSCS tokens will be used to pay as Auction fee,
+                                transaction, and also for NFT access behind paywall.
+                            </li>
+                            <li>
+                                <code>VOTING</code> - Hodlers holding BSCS or more can vote to approve or reject
+                                projects on BSCS IDO
+                            </li>
+                            <li>
+                                <code>SHARING TRANSACTION FEE</code> - Hodlers holding BSCS will share their transaction
+                                fees
+                            </li>
+                            <li>
+                                <code>IDO DISCOUNT</code> - Those who own BSCS will automatically qualify for a 10%
+                                discount on the IDO sale price.
+                            </li>
+                            <li>
+                                <code>PAYMENT</code> - Use BSCS as a payment method at the service points within BSCS
+                                ecosystem in the near future.
+                            </li>
+                            <li>
+                                <code>FUTURE BENEFITS</code> - There are many other benefits of BSCS Hodler that we are
+                                building and researching for early implementation.
+                            </li>
+
+                        </ul>
+                    </ul>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="Usageoffundsraised">
+                        Usage of funds raised
+                    </p>
+                    <ul class="text-gray-700">
+                        <ul>
+                            <li>
+                                Products development: 40%
+                            </li>
+                            <li>
+                                Liquidity and Exchange: 30%
+                            </li>
+                            <li>
+                                Ecosystem: 20%
+                            </li>
+                            <li>
+                                Operation: 10%
+                            </li>
+
+
+                        </ul>
+                    </ul>
+                </div>
+                <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right">
+                    <div class="my-7 my-lg-9 px-lg-7 border-left-lg border-gray-300">
+
+
+                        <h6 class="text-uppercase font-weight-bold">
+                            CONTENTS
+                        </h6>
+
+
+                        <ul class="list mb-0">
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscs" data-toggle="smooth-scroll">BSCStation
+                                    Specification</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscsa" data-toggle="smooth-scroll">BSCStation
+                                    Allocation
+                                </a>
+                            </li>
+                            <!-- <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscss" data-toggle="smooth-scroll">BSC Swap Specification
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscssa" data-toggle="smooth-scroll">BSC Swap Allocation
+                                </a>
+                            </li> -->
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#MarketCap" data-toggle="smooth-scroll">Market
+                                    Cap
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#TokenReleaseSchedule"
+                                    data-toggle="smooth-scroll">Token Release Schedule
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#BSCSStationHolderBenefits"
+                                    data-toggle="smooth-scroll">BSC Station Holder Benefits
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Usageoffundsraised"
+                                    data-toggle="smooth-scroll">Usage of funds raised
+                                </a>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <a id="scroll-top"></a>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="..//js/theme.min.js"></script>
+    <script>
+        var btn = $('#scroll-top');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+
+    <script>
+        Highcharts.chart('Allocationswap', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Token Allocation (BSCSswap Token)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Community Mass Adoption',
+                    y: 50,
+                    color: '#1F4B9A',
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Trading reward',
+                    y: 20,
+                    color: '#4C7AF3'
+                }, {
+                    name: 'Farming/staking',
+                    y: 20,
+                    color: '#4FCCFF'
+                }, {
+                    name: 'Marketing',
+                    y: 10,
+                    color: '#45CBA4'
+                }]
+            }]
+        });
+    </script>
+
+    <script>Highcharts.chart('Allocation', {
+            chart: {
+                type: 'pie',
+                options3d: {
+                    enabled: true,
+                    alpha: 45
+                }
+            },
+            title: {
+                text: 'Token Allocation (BSCStation Token)'
+            },
+            subtitle: {
+                text: ''
+            },
+            plotOptions: {
+                pie: {
+                    innerSize: 100,
+                    depth: 45
+                }
+            },
+            series: [{
+                name: 'Percentage',
+                data: [
+                    ['Seed sale', 12],
+                    ['Private-sale', 25],
+                    ['IDO', 1.6],
+                    ['Farming / staking reward', 12],
+                    ['Team', 15],
+                    ['Marketing', 8.4],
+                    ['Advisor & Partnership', 5],
+                    ['Liquidity', 10],
+                    ['Ecosystem', 11]
+                ]
+            }]
+        });
+    </script>
+
+</body>
+
+
+
+</html>

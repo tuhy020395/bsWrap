@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="/css/theme.min.css?v=0.1.1">
+    <link rel="stylesheet" href="/js/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>BSCS | Frontend Software Engineer - JavaScript / Typescript / React</title>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <SCRIPT LANGUAGE="Javascript">
+        $(document).ready(function () {
+            $("a[href*='#']:not([href='#])").click(function () {
+                let target = $(this).attr("href");
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                event.preventDefault();
+            });
+        });</SCRIPT>
+</head>
+
+<style>
+    .navbar {
+        transition: all .2s ease-in-out;
+        transition-property: background-color, color;
+        z-index: 1030;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff !important;
+        box-shadow: 0 3px 8px 0 rgb(116 129 141 / 10%);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #161c2d;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+</style>
+
+<body class="bg-light" style="padding-top: 84px;">
+
+
+
+
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" id="myHeader">
+        <div class="container">
+
+
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo-text-dark.png" class="navbar-brand-img" alt="...">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" target="_top"
+                            data-toggle="dropdown-item" href="/" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" target="_top" data-toggle="dropdown-item"
+                            href="/introduction" a-haspopup="true" aria-expanded="false">
+                            Introduction
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/tokenomics" aria-haspopup="true" aria-expanded="false">
+                            Tokenomics
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" target="_top"
+                            data-toggle="dropdown-item" href="/roadmap" aria-haspopup="true" aria-expanded="false">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/faq" aria-haspopup="true" aria-expanded="false">
+                            Frequently Asked Questions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col">
+  
+              <!-- Breadcrumb -->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <span class="text-white">
+                    Docs
+                  </span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span class="text-white">
+                    Hiring
+                  </span>
+                </li>
+              </ol>
+  
+            </div>
+            <div class="col-auto">
+  
+              <!-- Toggler -->
+              <div class="navbar-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </nav>
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    <div class="collapse d-lg-block" id="sidenavCollapse">
+                        <div class="py-7 py-lg-9 px-lg-7">
+
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                BSC Station Introduction
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Introduction">Introduction</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/roadmap">Roadmap</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Tokenomics
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/tokenomics">BSCS</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Exchange
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/BSCSwap-Exchange">How to Trade on the BSC Station</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-trustwallet">Adding Liquidity on TrustWallet</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-metamask">Adding Liquidity on MetaMask</a>
+                                </li>
+                                <li class="list-item">
+                                     <a class="list-link" target="_top" href="/remove-liquidity">Remove Liquidity</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                NFT (Non-fungible token
+                            </h6>
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/artworks-upload">How to mint NFT</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Other Product
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link"  target="_top" href="/start-pools">Startpool</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Analytics">Analytics</a>
+                                </li>
+                            </ul>
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                General FAQ
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/faq">General FAQ</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Use-MetaMask">How to use MetaMask on BSC Station</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Communities">Social Accounts & Communities</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Hiring
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Frontend-software-engineer">Frontend Software Engineer - JavaScript
+                                        / Typescript / React</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/solidity-engineer">Solidity Engineer</a>ity Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/technical-writer">Technical Writer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/senior-qa-engineer">Blockchain QA Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/ux-ui-designer">UX/UI Designer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+
+                    <h1 class="mb-1">Frontend Software Engineer - JavaScript / Typescript / React</h1>
+                    <p class="font-size-lg text-gray-700 mb-5">
+                        Hiring requirements and job description
+                    </p>
+                    <hr class="border-gray-300 my-6">
+
+                    <ul class="text-gray-700">
+                        <li id="Information">
+                            <strong>General Information</strong>
+                            <ul>
+                                <li>
+                                    <strong>Salary range: </strong>$80k-150k US Annual salary
+                                </li>
+                                <li>
+                                    <strong>Position: </strong>Full-time
+                                <li>
+                                    <strong>Location: </strong>Remote
+                                </li>
+                                <li>
+                                    <strong>Time-zone preference: </strong>Any
+                                </li>
+                            </ul>
+                        </li>
+                        <li id="Responsibilities">
+                            <strong>Your Responsibilities</strong>
+                            <ul>
+                                <li>
+                                    Design, scope, and estimate complex frontend products/upgrades
+                                </li>
+                                <li>
+                                    Envision and develop features to help grow BSC Swap
+                                 </li>
+                                 <li>
+                                    Enthusiastically collaborate with a small team to plan projects at the task level
+                                 </li>
+                                 <li>
+                                    Collaborate with cross-functional partners on all aspects of product development
+                                 </li>
+                                 <li>
+                                    Identify and advocate for team-wide areas of improvement and best practices
+                                 </li>
+
+                            </ul>
+                        </li>
+                        <li id="Skills">
+                            <strong>Skills & Qualifications</strong>
+                            <ul>
+                                <li>
+                                    3-5 years of experience in building responsive/adaptive web applications with JavaScript/Typescript.
+                                </li>
+                                <li>
+                                    Solid experience in React JS
+                                </li>
+                                <li>
+                                    Ability to write structured and clean code
+                                </li>
+                                <li>
+                                    Experience with Javascript testing tools
+                                </li>
+                                <li>
+                                    Experience with modern front-end build pipelines and tools
+                                </li>
+                                <li>
+                                    Experience with defining and delivering scalable frontend architectures
+                                </li>
+                                <li>
+                                    Some experience with GraphQL
+                                </li>
+                                <li>
+                                    Experience working with Web3 and a decentralized application frontend
+                                </li>
+                                <li>
+                                    Ability to work independently and innovate.
+                                </li>
+
+                            </ul>
+                        </li>
+                        <li id="apply">
+                            <strong>How to apply</strong>
+                            <ul>
+                                <li>
+                                    Email Bscswap@gmail.com with your resume
+                                </li>
+
+                            </ul>
+                        </li>
+                       
+                        
+                    </ul>
+
+
+
+                </div>
+                <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right">
+                    <div class="my-7 my-lg-9 px-lg-7 border-left-lg border-gray-300">
+
+
+                        <h6 class="text-uppercase font-weight-bold">
+                            CONTENTS
+
+                        </h6>
+
+
+                        <ul class="list mb-0">
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Information" data-toggle="smooth-scroll">General Information</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Responsibilities" data-toggle="smooth-scroll">Your Responsibilities</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Skills" data-toggle="smooth-scroll">Skills & Qualifications</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#apply" data-toggle="smooth-scroll">How to apply</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <a id="scroll-top"></a>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="..//js/theme.min.js"></script>
+    <script>
+        var btn = $('#scroll-top');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+</body>
+
+
+
+</html>

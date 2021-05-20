@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.6, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 512 512" style="enable-background:new 0 0 512 512;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#DEDEDE;}
+	.st1{fill:#FFC846;}
+	.st2{fill:#565656;}
+	.st3{fill:#FFDC65;}
+	.st4{fill:url(#SVGID_1_);}
+	.st5{fill:#606060;}
+	.st6{opacity:0.62;fill:#E5E5E5;enable-background:new    ;}
+	.st7{fill:#3A3A3A;}
+</style>
+<title>icon2</title>
+<path class="st0" d="M378,347.8h-91.5c0,12.6,10.2,22.9,22.9,22.9h45.8C367.8,370.7,378,360.4,378,347.8z"/>
+<path class="st1" d="M378,286.8H134c-33.7,0-61,27.3-61,61s27.3,61,61,61h244c33.7,0,61-27.3,61-61S411.7,286.8,378,286.8z"/>
+<path class="st2" d="M355.1,370.7h-45.8c-12.6-0.3-22.7-10.7-22.4-23.4c0.3-12.3,10.1-22.1,22.4-22.4h45.8
+	c12.6,0.3,22.7,10.7,22.4,23.4C377.3,360.5,367.4,370.4,355.1,370.7z"/>
+<path class="st3" d="M73,347.8h213.5c0-12.6,10.2-22.9,22.9-22.9h45.8c12.6,0,22.9,10.2,22.9,22.9h61c0-33.7-27.3-61-61-61H134
+	C100.3,286.8,73,314.1,73,347.8z"/>
+<linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="-66.6018" y1="475.9955" x2="732.6282" y2="163.0055" gradientTransform="matrix(1 0 0 -1 0 514)">
+	<stop  offset="0" style="stop-color:#FCEE21"/>
+	<stop  offset="0.5" style="stop-color:#F9BE1F"/>
+	<stop  offset="1" style="stop-color:#F7931E"/>
+</linearGradient>
+<path class="st4" d="M134,225.3h244c33.7,0,61-27.3,61-61s-27.3-61-61-61H134c-33.7,0-61,27.3-61,61S100.3,225.3,134,225.3z"/>
+<path class="st5" d="M156.9,141.5h45.8c12.6,0,22.9,10.2,22.9,22.9c0,12.6-10.2,22.9-22.9,22.9h-45.8c-12.6,0-22.9-10.2-22.9-22.9
+	C134,151.7,144.3,141.5,156.9,141.5z"/>
+<path class="st6" d="M439,164.3H225.5c0,12.6-10.2,22.9-22.9,22.9h-45.8c-12.6,0-22.9-10.2-22.9-22.9H73c0,33.7,27.3,61,61,61h244
+	C411.7,225.3,439,198,439,164.3z"/>
+<path class="st7" d="M134,164.3h91.5c0-12.6-10.2-22.9-22.9-22.9h-45.7C144.3,141.5,134,151.7,134,164.3z"/>
+</svg>

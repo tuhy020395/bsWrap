@@ -1,0 +1,1115 @@
+<!doctype html>
+<html lang="en">
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="/css/theme.min.css?v=0.1.1">
+    <link rel="stylesheet" href="/js/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>BSC Station (BSCS)</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $("a").on('click', function (event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function () {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+    </script>
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+</head>
+
+<body>
+
+    <div id="loader-wrapper">
+        <svg viewbox=" 0 0 512 512" id="loader">
+            <linearGradient id="loaderLinearColors" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="5%" stop-color="#CA7F27"></stop>
+                <stop offset="100%" stop-color="#F1C214"></stop>
+            </linearGradient>
+            <g>
+                <circle cx="256" cy="256" r="150" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="125" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="100" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <g>
+                <circle cx="256" cy="256" r="75" fill="none" stroke="url(#loaderLinearColors)" />
+            </g>
+            <circle cx="256" cy="256" r="60" fill="url(#loaderImage)" stroke="none" stroke-width="0" />
+
+            <!-- Change the preloader logo here -->
+            <defs>
+                <pattern id="loaderImage" height="100%" width="100%" patternContentUnits="objectBoundingBox">
+                    <image href="/img/logobscs.png" preserveAspectRatio="none" width="1" height="1"></image>
+                </pattern>
+            </defs>
+        </svg>
+
+        <div class="loader-section section-left"></div>
+        <div class="loader-section section-right"></div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg navbar-light" id="myHeader">
+        <div class="container">
+
+
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo-horizontal.png" class="navbar-brand-img" alt="...">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" target="_top"
+                            data-toggle="dropdown-item" href="/" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" target="_top" data-toggle="dropdown-item"
+                            href="#nft" aria-haspopup="true" aria-expanded="false">
+                            NFT
+                        </a>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="#Startpool" aria-haspopup="true" aria-expanded="false">
+                            Startpool
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" target="_top" data-toggle="dropdown-item"
+                            href="#swap" aria-haspopup="true" aria-expanded="false">
+                            Swap
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown" style="display: none;">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown-item"
+                            href="#Starter" target="_blank" aria-haspopup="true" aria-expanded="false">
+                            Starter
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" data-toggle="dropdown-item"
+                            href="#TokenUtility" target="_top" aria-haspopup="true" aria-expanded="false">
+                            Token Utility
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" target="_top"
+                            data-toggle="dropdown-item" href="#Roadmap" aria-haspopup="true" aria-expanded="false">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" target="_top"
+                            data-toggle="dropdown-item" href="#investors" aria-haspopup="true" aria-expanded="false">
+                            Investors
+                        </a>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="bg-image-top">
+        <video autoplay muted loop class="bg-image-top" id="myVideo">
+            <source src="./img/bg-video.m4v" class="video-responsive" type="video/mp4">
+        </video>
+        <div class="content-position">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-7 text-center aos-init aos-animate" data-aos="fade-up">
+
+
+                    <img src="/img/coin-bscs.png" alt="..." class="img-fluid mb-6 d-lg-none">
+
+
+                    <h1 style="color: #fff;">
+                        Building A Full-Stack DEFI with NFT <br>Auction On Binance Smart Chain
+                    </h1>
+
+                    <p class="font-size-lg text-muted mb-6 mb-md-8" style="color: #fff;">
+                        The Infrastructure for DeFi & NFT Powered by BSC <br>
+
+                    </p>
+
+
+                    <a href="https://bscstation.finance/" target="_blank" class="btn btn-primary-soft lift">
+                        Swap Now
+                    </a>
+
+                    <a href="https://docs.google.com/forms/d/e/1FAIpQLSetpx_GHq1x_F1ZbircVoDm8HlHoDNLvj58pzRH-FY6EzVO5Q/viewform" target="_blank" style="background-color: aliceblue;"
+                        class="btn btn-primary-soft lift">
+                        Apply for IDO
+                    </a>
+                    <a href="/introduction" target="_blank" class="btn btn-primary-soft lift">
+                        Read Docs
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
+    <section class="card-section" id="nft">
+
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+
+                    <h1>
+                        NFT - AUCTION
+                    </h1>
+                    <p class="lead text-gray-700 mb-7 mb-md-9">
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6 col-lg-5">
+
+
+                    <div class="mb-8 mb-md-0">
+
+
+                        <img src="/img/nft-aution.png" alt="..."
+                            class="screenshot img-fluid mw-md-100 float-right mb-6 mb-md-0">
+
+                    </div>
+
+                </div>
+                <div class="col-12 col-md-6 col-lg-7">
+                    <div class="d-flex">
+                        <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                            <span>1</span>
+                        </div>
+                        <div class="ml-5">
+                            <h3>
+                                BSC NFT Station SDK
+                            </h3>
+                            <p class="text-gray-700">
+                                The SDK will standardize all NFT assets related to the use of the Auction feature,
+                                providing a clear set of tools, documentation, and rules to help fair and efficient
+                                auction buyers and sellers.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                            <span>2</span>
+                        </div>
+                        <div class="ml-5">
+                            <h3>
+                                BSC Smart Security (BSCSS)
+                            </h3>
+                            <p class="text-gray-700">
+                                BSCSS is a smart security contract of BSC Protocol based marketplace payment platform
+                                designed to make the NFT buying and selling of any good or service easy and protected.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                            <span>3</span>
+                        </div>
+                        <div class="ml-5">
+                            <h3>
+                                Auctions
+                            </h3>
+                            <p class="text-gray-700">
+                                Auction is one of the most prominent features of the BSC Station platform. This is a
+                                highly efficient mechanism of realizing a resource configuration in the face of
+                                inadequate information. Auctions can be categorized into three types of procedures for
+                                auctions depending on the occurrence of a price development during an auction run and
+                                its causes.
+                            </p>
+                            <ul class="text-gray-700">
+                                <li>
+                                    Dutch auction - Partially driven by time
+                                </li>
+                                <li>
+                                    English auction - Driven by bidders only
+                                </li>
+                                <li>
+                                    Sealed bid auction - Single shot
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                            <span>4</span>
+                        </div>
+                        <div class="ml-5">
+                            <h3>
+                                Encryption algorithm
+                            </h3>
+                            <p class="text-gray-700">
+                                BSC NFT Protocol smart contract uses the unique encryption algorithm, encrypts all bids
+                                and ensures that all bids cannot be changed and encrypted information is irreversible.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="d-flex">
+                        <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                            <span>5</span>
+                        </div>
+                        <div class="ml-5">
+                            <h3>
+                                Fixed-price contract
+                            </h3>
+                            <p class="text-gray-700">
+                                Fixed price can refer to a leg of a swap where the payments are based on a constant
+                                interest rate, or it can refer to a negotiated price point that is not subject to change
+                                under normal circumstances. NFT holder can sell their NFTs on the blockchain by smart
+                                contract of BSC NFT Protocol in the form of pending order and designate required for
+                                NFT.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+
+
+    </section>
+    <section class="card-section" id="Startpool">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-sm-10 offset-sm-1">
+                    <div class="card-txt">
+                        <h2 class="section-title">BSC Startpool</h2>
+                        <span class="badge badge-pill badge-primary-soft mb-3">
+                            <span class="h6 text-uppercase">A benefit way to farm new assets</span>
+                        </span>
+                        <p> BSC Startpool helps quality NFT and non-NFT projects distribute their tokens to a wider
+                            audience while allowing crypto users and investors to generate attractive returns in a form
+                            of new tokens. This is an innovative solution that gives advantages to both users and
+                            quality crypto projects
+                        </p>
+                    </div>
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                            <a class="card d-md-none d-lg-flex" href="#!">
+
+                                <div class="card-zoom">
+                                    <img class="card-img-top" src="/img/bake-pool.png" alt="...">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                            <a class="card mb-6 mb-lg-0" href="#!">
+
+                                <div class="card-zoom">
+                                    <img class="card-img-top" src="/img/busd-pool.png" alt="...">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                            <a class="card mb-6 mb-lg-0" href="#!">
+
+                                <div class="card-zoom">
+                                    <img class="card-img-top" src="/img/bnb-pool.png" alt="...">
+                                </div>
+                            </a>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+    </section>
+    <section class="card-section" style="display: none;" id="Starter">
+        <div class="container-fluid">
+            <div class="row align-items-center">
+                <div class="col-lg-8 offset-lg-2 col-sm-10 offset-sm-1">
+                    <div class="card-txt">
+                        <h2 class="section-title">BSC Starter</h2>
+                        <p> With BSC Starter, NFT and Non-NFT projects will be able to raise and exchange capital cheap
+                            and fast. Users will be able to participate in a secure and compliant environment and to use
+                            assets that go way beyond the current BEP-20 standard.
+                        </p>
+                    </div>
+
+                    <div class="row" style="padding-top: 50px;">
+                        <div class="col-2 md-3 col-lg-4 d-flex"></div>
+
+                        <div class="col-8 md-6 col-lg-4 d-flex">
+
+                            <a class="card mb-6 mb-lg-0" href="#!">
+
+                                <div class="card-zoom">
+                                    <img class="card-img-top" src="/img/ending.png" alt="...">
+                                </div>
+                            </a>
+
+                        </div>
+                        <div class="col-2 md-3 col-lg-4 d-flex"></div>
+                    </div>
+
+
+
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+    </section>
+
+    <section class="pt-8 pt-md-11" id="swap">
+        <div class="container" style="max-width: 960px;">
+            <div class="row justify-content-center">
+                <div class="col-12 text-center">
+                    <h1 class="font-weight-bold">
+                        BSC SWAP
+                    </h1>
+
+
+                    <p class="font-size-lg mb-7">
+                        BSC Swap is a decentralized exchange for swapping BEP-20 tokens and NFT on Binance Smart Chain.
+                        BSC Swap uses an automated market
+                        maker (AMM) model where users trade against a liquidity pool.
+                    </p>
+                    <a href="https://bscstation.finance" target="_blank" class="btn btn-primary-soft lift">
+                        Launch APP
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12 order-md-2">
+
+
+                    <div class="device-combo device-combo-macbook-iphonex mb-6 mb-md-0">
+
+
+                        <div class="device device-macbook">
+
+                            <img src="/img/swap-desktop.png" class="img-fluid" alt="...">
+                        </div>
+
+
+                        <div class="device device-iphonex">
+
+                            <img src="/img/swap-mobile.png" class="img-fluid" alt="...">
+                        </div>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section class="py-8 py-md-8">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up" data-aos-delay="100">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon_Decentralised.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        Decentralized
+                    </h3>
+
+
+                    <p class="mb-0">
+                        "Get your keys, own your coins". Enjoy decentralized trading using your own keys, trade anytime,
+                        anywhere.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon2_On Mobile.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        On Mobile
+                    </h3>
+
+
+                    <p class="mb-6 mb-md-0">
+                        You can use Metamask, Trust Wallet or any kinds of wallet that support web3 and dApps on your
+                        mobile to experience products on BSC DeFi Station.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up" data-aos-delay="50">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon2_On Desktop.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        On Desktop
+                    </h3>
+
+
+                    <p class="mb-6 mb-md-0">
+                        You can use Chrome browser combined with Metamask or Trust wallet to experience our products
+                        including BSC Swap, BSC Startpool
+                    </p>
+
+                </div>
+
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+
+    </section>
+
+
+
+
+    <section class="pt-8 pt-md-11" style="display: none;" id="Exchange">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+                <div class="col-12 col-md-5">
+
+
+
+
+                    <h2>
+                        DECENTRALIZED EXCHANGE
+                    </h2>
+
+
+                    <p class="lead mb-6 mb-md-0">
+                        BSCS Dex is Fully Decentralised and powered by Community Governance. Built on Binance Smart
+                        Chain. BSCS Dex will be the optimization of AMM and PMM protocol on BSC Swap to get the best
+                        liquidity to facilitate users when trading.
+                    </p><br>
+                    <a href="#" class="btn btn-primary-soft lift" style="margin-bottom: 30px;display: none;">
+                        Coming Soon
+                    </a>
+
+                </div>
+                <div class="col-12 col-md-7">
+
+                    <div class="row no-gutters">
+                        <div class="col-12">
+
+
+                            <div class="p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                <img src="/img/exchange-Decentralised.png" class="img-fluid" alt="...">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="pt-8">
+        <div class="container">
+            <div class="row align-items-center justify-content-between">
+
+
+                <div class="col-12 col-md-6">
+
+                    <div class="row no-gutters">
+                        <div class="col-12">
+
+
+                            <div class="mt-9 p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                <img src="/img/ip2.png" class="img-fluid" alt="...">
+                            </div>
+
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-md-6">
+
+
+
+
+
+                    <h2>
+                        APP AND EXTENSION
+                    </h2>
+
+
+                    <p class="lead mb-6 mb-md-0">
+                        The wallet for DeFi and NFT. Swapping, Storing, Transfering and Protecting crypto assets for
+                        everyone on Binance Smart Chain. Control your own assets in easiest way.
+                    </p><br>
+                    <a href="#" class="btn btn-primary-soft lift" style="display: none;">
+                        Coming Soon
+                    </a>
+
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+
+    </section>
+
+    <section class="py-8">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-12 col-md-10 col-lg-8 text-center">
+
+
+
+
+                    <h1 class="font-weight-bold">
+                        HOW IT WORKS?
+                    </h1>
+
+
+                    <p class="font-size-lg mb-7 mb-md-9">
+                        <strong style="color: #ff9800;">BSC Station (BSCS)</strong> aims to build a Full-Stack DEFI with
+                        NFT Auction on the Binance Smart Chain. It will become economy infrastructure for DeFi and NFT
+                        powered by Binance Smart Chain.
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up" data-aos-delay="100">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon2_Deposit.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        Easier
+                    </h3>
+
+
+                    <p class="mb-0">
+                        BSC Station offers a convenient and easy-to-use experience with a user-friendly interface
+                        design, complete and specific instructions. All the products that users need are concentrated in
+                        BSC's DeFI with NFT auction ecosystem.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon2_Wait.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        Faster
+                    </h3>
+
+
+                    <p class="mb-6 mb-md-0">
+                        BSC Station built on BSC, which is compatible with smart contracts for
+                        decentralized applications, is connected with the high throughput Binance Chain to achieve
+                        shorter confirmation times and higher transaction processing speeds.
+                    </p>
+
+                </div>
+                <div class="col-12 col-md-4" style="text-align: center;" data-aos="fade-up" data-aos-delay="50">
+
+
+                    <div class="icon text-primary mb-3">
+                        <img src="/img/icons/icon2_Withdraw.svg" style="height:64px; width: 64px;" alt="..."
+                            class="img-fluid">
+                    </div>
+
+
+                    <h3>
+                        Cheaper
+                    </h3>
+
+
+                    <p class="mb-6 mb-md-0">
+                        Blockchain fees are an important factor to consider before choosing a
+                        blockchain protocol. When it comes to blockchain fees, Binance Smart Chain is substantially more
+                        cost-effective than Ethereum and user can save money.
+                    </p>
+
+                </div>
+
+            </div>
+            <hr class="border-gray-300 my-6">
+
+        </div>
+
+    </section>
+
+
+
+
+    <section class="card-section" id="TokenUtility">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-sm-10 offset-sm-1">
+                    <div class="card-txt" style="padding-bottom: 50px;">
+                        <h2 class="section-title">BSCS Token</h2>
+
+
+                    </div>
+
+                    <div class="device device-macbook" style="padding-bottom: 50px;">
+
+                        <img src="/img/mapbscs.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+    </section>
+
+
+    <section class="card-section roadmap-desktop" id="Roadmap">
+
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-10 col-sm-10 offset-sm-1">
+                    <div class="card-txt" style="padding-bottom: 50px;">
+                        <h2 class="section-title">Roadmap</h2>
+
+
+                    </div>
+
+                    <div class="device device-macbook" style="padding-bottom: 50px;">
+
+                        <img src="/img/roadmap-new.png" class="img-fluid" alt="...">
+                    </div>
+                </div>
+            </div>
+            <hr class="border-gray-300 my-6">
+        </div>
+    </section>
+
+
+    <section class="py-8 py-md-11 roadmap-mobile">
+        <div class="container">
+            <hr class="border-gray-300 my-6">
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 text-center">
+
+
+
+                    <h1 class="font-weight-bold text-black">
+                        Roadmap
+                    </h1>
+
+                    <p class="font-size-lg mb-10">
+
+                    </p>
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="main-timeline">
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2020</span>
+
+                                <h3 class="title">4th 2020 </h3>
+                                <p class="description">
+                                    - Researched the Binance Smart Chain, DeFi with NFT Auction and BSC Station
+                                    Ecosystem
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2021</span>
+                                <h3 class="title">1st 2021</h3>
+                                <p class="description">
+                                    - Completion of the BSCS website, whitepaper and smart contract. Product
+                                    development.
+                                    <br>- Smart Contract Security Audit.
+                                    <br>- Token Seed and Private sale.
+
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2021</span>
+                                <h3 class="title">2nd 2021</h3>
+                                <p class="description">
+                                    - Public sale
+                                    <br>- Launching BSC Station Swap, Startpool for NFT Staking and
+                                    Farming.
+                                    <br>- Launching NFT Auction and Transaction
+
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2021</span>
+                                <h3 class="title">3rd 2021</h3>
+                                <p class="description">
+                                    - NFT and DeFi Vaults and Treasury
+                                    <br>- Launching BSCS iOS and Android mobile app with web3 crypto wallet integration.
+
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2021</span>
+                                <h3 class="title">4th 2021</h3>
+                                <p class="description">
+                                    - Building scalable organization, risk management and compliance framework.
+                                </p>
+                            </a>
+                        </div>
+                        <div class="timeline">
+                            <a href="#" class="timeline-content">
+                                <div class="timeline-icon">
+                                    <img src="/img/icons/logo-fa-white.png" alt="..." class="img-fluid">
+                                </div>
+                                <span class="timeline-year">2022</span>
+                                <h3 class="title">1st 2022</h3>
+                                <p class="description">
+                                    - Launching BSC Station v2 <br> - NFT auction v2
+                                </p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section class="py-6 py-md-8 border-bottom" id="investors">
+        <div class="container">
+
+            <div class="row">
+                <div class="col-12 col-md-12 col-lg-12 text-center">
+                    <h1 class="font-weight-bold text-black">
+                        INVESTORS
+                    </h1>
+                    <p class="font-size-lg mb-10">
+                    </p>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/spark.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/morning.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/ngc.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/dfg.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/au21.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/x21.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/chain.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/bscpad.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/onebit.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+            </div>
+            <div class="row align-items-center justify-content-center">
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/carbon.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-6 col-sm-4 col-md-4 mb-4 mb-md-0">
+                    <div class="img-fluid text-gray-600 mb-2 mb-md-0 svg-shim" style="text-align: center;">
+                        <img src="/img/investors/M6.png" alt="..." class="img-fluid">
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <footer class="py-8 py-md-11 bg-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-4 col-lg-3">
+                    <p class="text-gray-700 mb-2" style="font-size: 26px;color: #869aa8!important;">
+
+                        <img src="/img/logo-horizontal.png" class="list-social-icon"
+                            style="max-width: 9.25rem;height: auto;" alt="...">
+                    </p>
+
+
+                    <ul class="list-unstyled list-inline list-social mb-6 mb-md-0">
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://twitter.com/bscstation" target="_blank" class="text-decoration-none">
+                                <img src="/img/icons/social/twitter.png" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://t.me/bscstation" target="_blank" class="text-decoration-none">
+                                <img src="/img/icons/social/telegram.png" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item mr-3">
+                            <a href="https://bscstation.medium.com/" target="_blank" class="text-decoration-none">
+                                <img src="/img/icons/social/medium.png" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="https://bscstation.zendesk.com/hc/en-us" target="_blank"
+                                class="text-decoration-none">
+                                <img src="/img/icons/social/Zendesk.png" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                        <li class="list-inline-item list-social-item">
+                            <a href="https://www.youtube.com/channel/UCJg3z-O4X7SCeL3Qccb-0zA/featured" target="_blank"
+                                class="text-decoration-none">
+                                <img src="/img/icons/social/youtube.png" class="list-social-icon" alt="...">
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+
+
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="/" class="text-reset">
+                                Home
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#nft" class="text-reset">
+                                NFT
+                            </a>
+                        </li>
+
+
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+                        <li class="mb-3">
+                            <a href="#Swap" class="text-reset">
+                                Swap
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#Startpool" class="text-reset">
+                                Startpool
+                            </a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+
+                    <ul class="list-unstyled text-muted mb-6 mb-md-8 mb-lg-0">
+
+                        <li class="mb-3">
+                            <a href="#roadmap" class="text-reset">
+                                Roadmap
+                            </a>
+                        </li>
+                        <li class="mb-3">
+                            <a href="#TokenUtility" target="_blank" class="text-reset">
+                                Token Utility
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </footer>
+    <a id="scroll-top"></a>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/theme.min.js"></script>
+
+    <script>
+        var btn = $('#scroll-top');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script>
+        $(window).on('load', function () {
+            var preLoder = $(".loader-wrapper");
+            preLoder.delay(700).fadeOut(500);
+            $('body').addClass('loaded');
+        });
+    </script>
+
+</body>
+
+</html>

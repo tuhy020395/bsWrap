@@ -1,0 +1,1298 @@
+<!doctype html>
+<html lang="en">
+
+
+
+<meta http-equiv="content-type" content="text/html;charset=utf-8" />
+
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="/fonts/Feather/feather.css">
+    <link rel="stylesheet" href="/css/theme.min.css?v=0.1.1">
+    <link rel="stylesheet" href="/js/Font-awesome-4.7.0/css/font-awesome.min.css">
+    <title>BSCS | Introduction</title>
+
+
+
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156446909-2"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+        gtag("config", "UA-156446909-2");
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <SCRIPT LANGUAGE="Javascript">
+        $(document).ready(function () {
+            $("a[href*='#']:not([href='#])").click(function () {
+                let target = $(this).attr("href");
+                $('html,body').stop().animate({
+                    scrollTop: $(target).offset().top
+                }, 1000);
+                event.preventDefault();
+            });
+        });</SCRIPT>
+</head>
+
+<style>
+    .navbar {
+        transition: all .2s ease-in-out;
+        transition-property: background-color, color;
+        z-index: 1030;
+        position: fixed;
+        width: 100%;
+        background-color: #ffffff !important;
+        box-shadow: 0 3px 8px 0 rgb(116 129 141 / 10%);
+    }
+
+    .navbar-light .navbar-nav .nav-link {
+        color: #161c2d;
+    }
+
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+        background: #ffffff;
+    }
+</style>
+
+<body style="padding-top: 84px;">
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top border-bottom" id="myHeader">
+        <div class="container">
+
+
+            <a class="navbar-brand" href="/">
+                <img src="/img/logo-text-dark.png" class="navbar-brand-img" alt="...">
+            </a>
+
+
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+
+
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                    aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fe fe-x"></i>
+                </button>
+
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarLandings" target="_top"
+                            data-toggle="dropdown-item" href="/" aria-haspopup="true" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarPages" target="_top" data-toggle="dropdown-item"
+                            href="/introduction" a-haspopup="true" aria-expanded="false">
+                            Introduction
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/tokenomics" aria-haspopup="true" aria-expanded="false">
+                            Tokenomics
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarDocumentation" target="_top"
+                            data-toggle="dropdown-item" href="/roadmap" aria-haspopup="true" aria-expanded="false">
+                            Roadmap
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" id="navbarAccount" target="_top" data-toggle="dropdown-item"
+                            href="/faq" aria-haspopup="true" aria-expanded="false">
+                            Frequently Asked Questions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </div>
+
+        </div>
+    </nav>
+    <nav class="d-lg-none bg-gray-800">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col">
+  
+              <!-- Breadcrumb -->
+              <ol class="breadcrumb">
+                <li class="breadcrumb-item">
+                  <span class="text-white">
+                    Docs
+                  </span>
+                </li>
+                <li class="breadcrumb-item active" aria-current="page">
+                  <span class="text-white">
+                    Introduction
+                  </span>
+                </li>
+              </ol>
+  
+            </div>
+            <div class="col-auto">
+  
+              <!-- Toggler -->
+              <div class="navbar-dark">
+                <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#sidenavCollapse" aria-controls="sidenavCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+              </div>
+  
+            </div>
+          </div> <!-- / .row -->
+        </div> <!-- / .container -->
+      </nav>
+
+
+    <section>
+        <div class="container-fluid">
+            <div class="row">
+                <div
+                    class="col-12 col-lg-3 col-xl-2 px-lg-0 border-bottom border-bottom-lg-0 border-right-lg border-gray-300 sidenav sidenav-left">
+
+                    <div class="collapse d-lg-block" id="sidenavCollapse">
+                        <div class="py-7 py-lg-9 px-lg-7">
+
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                BSC Station Introduction
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Introduction">Introduction</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/roadmap">Roadmap</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Tokenomics
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/tokenomics">BSCS</a>
+                                </li>
+
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Exchange
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/BSCSwap-Exchange">How to Trade on the BSC Station</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-trustwallet">Adding Liquidity on TrustWallet</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/add-Liquidity-metamask">Adding Liquidity on MetaMask</a>
+                                </li>
+                                <li class="list-item">
+                                     <a class="list-link" target="_top" href="/remove-liquidity">Remove Liquidity</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                NFT (Non-fungible token
+                            </h6>
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/artworks-upload">How to mint NFT</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Other Product
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item">
+                                    <a class="list-link"  target="_top" href="/start-pools">Startpool</a>
+                                </li>
+                                <li class="list-item">
+                                    <a class="list-link" target="_top" href="/Analytics">Analytics</a>
+                                </li>
+                            </ul>
+
+                            <h6 class="text-uppercase font-weight-bold">
+                                General FAQ
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/faq">General FAQ</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Use-MetaMask">How to use MetaMask on BSC Station</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Communities">Social Accounts & Communities</a>
+                                </li>
+                            </ul>
+                            <h6 class="text-uppercase font-weight-bold">
+                                Hiring
+                            </h6>
+
+
+                            <ul class="list mb-6">
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/Frontend-software-engineer">Frontend Software Engineer - JavaScript
+                                        / Typescript / React</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/solidity-engineer">Solidity Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                    <a class="list-link" target="_top" href="/technical-writer">Technical Writer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/senior-qa-engineer">Blockchain QA Engineer</a>
+                                </li>
+                                <li class="list-item d-flex">
+                                     <a class="list-link" target="_top" href="/ux-ui-designer">UX/UI Designer</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div class="col-12 col-lg-6 col-xl-8 offset-lg-3 offset-xl-2 py-7 py-lg-9 px-lg-7">
+
+
+                    <h1 class="mb-1" id="Introduction">Introduction</h1>
+
+
+
+                    <hr class="border-gray-300 my-6">
+
+
+                    <h3 class="font-weight-bold">
+                        Introduction
+                    </h3>
+
+
+                    <p class="text-gray-700">
+                        BSC Station (BSCS) aims to build a Full-Stack DEFI with NFT Auction on the Binance Smart Chain.
+                        It will become economy infrastructure for DeFi and NFT powered by Binance
+                        Smart Chain. The Infrastructure for DeFi & NFT Powered by BSC.
+                    </p>
+                    <p class="text-gray-700">
+                        BSCS operates on top of existing blockchains Binance Smart Chain that is designed to offer
+                        maximum value to consumers and institutions. Binance Smart Chain has solved the problem of
+                        infrastructure in the context of BSCS’s product, and that BSCS represents
+                        the ideal use case to leverage the technologies offered by its platform.
+                    </p>
+
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        Vision
+                    </h3>
+
+
+                    <p class="text-gray-700">
+                        To become a leading ecosystem that provides DeFi services and utilities for crypto users on the
+                        Binance Smart Chain platform, develop and optimize applications on BSC and become a leading Defi
+                        ecosystem, transparent, user-friendly and bring the most benefits
+                        to the user community.
+                    </p>
+                    <hr class="border-gray-300 my-6">
+
+
+                    <h3 class="font-weight-bold">
+                        Mission
+                    </h3>
+
+
+                    <p class="text-gray-700">
+                        BSC Station is a community ecosystem, helping users to access DeFi platforms in the easiest,
+                        safest and most cost-effective way. BSC Station is the most convenient bridge to connect users
+                        and application products on the Binance Smart Chain ecosystem and
+                        other Blockchain protocols.
+                    </p>
+                    <p class="text-gray-700">The BSC Station platform uses the Sharing Economy Model for the purpose of
+                        profit sharing, providing better liquidity farming and liquidity services to crypto traders and
+                        farmer. Depositors provide market liquidity to earn passive
+                        income in the form of our BSCS tokens.
+                    </p>
+                    <p class="text-gray-700">The BSCS token is the operating fuel and the governance token of the BSC
+                        Station ecosystem. BSCS holders can participate in liquidity farming, share transaction fees on
+                        BSC Swap, BSCS Launchpool and many other profit-sharing activities
+                        on the BSC Station ecosystem to maximize profits.
+                    </p>
+
+                    <hr class="border-gray-300 my-6">
+
+                    <h1 class="mb-1" id="WhyBSCSStation">Why BSC Station</h1>
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        Why BSC Station
+                    </h3>
+
+
+                    <p class="text-gray-700">
+                        We believe that communities are important contributors to solving the problems that remain in
+                        the digital asset market. BSCS believes that with a quality ecosystem, determined by the
+                        community, a transparent and optimal operating model will be the best
+                        destination for users.
+                    </p>
+                    <p class="text-gray-700">BSCS provides the ability to issue new assets Pool at the lowest cost and
+                        create highly liquid capital pools through our platform. There are no restrictions on the
+                        initial price nor the ratio of funds and tokens supplied.</p>
+                    <p class="text-gray-700">BSCS is both a Dex and an Project startor; It is the incubator for the
+                        development of new projects</p>
+                    <p class="text-gray-700">The BSCS token economics model introduces a membership system and a fee
+                        sharing mechanism. In addition to its governance functions, BSCS gives holders trading fee
+                        discounts and IDO participation allocations and token Hodler airdrop.
+                        The system’s entitle holders to trading fee dividends and membership rewards, as well as the
+                        BSCS holder benefits.</p>
+
+
+                    <hr class="border-gray-300 my-6">
+
+                    <h1 class="mb-1" id="whybinance">
+                        Why was Binance Smart Chain (BSC) chosen?
+                    </h1>
+
+
+                    <p class="text-gray-700">
+                        The majority of dApps are running on the ERC20 platform with high conversion fees and other fees
+                        very expensive. Besides, the block creation also takes a lot of time.
+                    </p>
+                    <p class="text-gray-700">
+                        Binance Smart Chain is considered to be the ultimate solution. First, EVM compatibility allows
+                        support for Ethereum tools, with faster speeds and cheaper transaction fees. Second, thanks to
+                        EVM interoperability and programming, Binance Smart Chain can
+                        run on Proof of Stake, thereby increasing decentralization and community engagement.
+                        Furthermore, Binance Smart Chain is expected to combine the features of the DEX blockchain with
+                        smart contract functionality. From there, it helps
+                        developers to program and additionally interact on the blockchain. BSC can fully work even when
+                        Binance Chain is offline (Because this is not Layer 2 Blockchain, but independent Blockchain)
+                    </p>
+                    <p class="text-gray-700">
+                        Finally, BSC has a huge ecosystem when backed by the world's No. 1 exchange Binance and
+                        ecosystem such as Trust wallet, Pancake, Julswap, DODO, ... All of that makes BSC becomes one of
+                        the most popular leading blockchains in the DeFi industry. That is
+                        why we chose Binance Smart Chain.
+                    </p>
+
+                    <hr class="border-gray-300 my-6">
+
+
+
+                    <h1 class="mb-1" id="Products">Products</h1>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        NFT - AUCTION
+                    </h3>
+                    <div class="row align-items-center">
+
+                        <div class="col-12 col-md-6 col-lg-6 docs-flex">
+                            <div class="d-flex">
+                                <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                                    <span>1</span>
+                                </div>
+                                <div class="ml-5">
+                                    <h3>
+                                        BSC NFT Station SDK
+                                    </h3>
+                                    <p class="text-gray-700">
+                                        The SDK will standardize all NFT assets related to the use of the Auction
+                                        feature, providing a clear set of tools, documentation, and rules to help fair
+                                        and efficient auction buyers and sellers.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                                    <span>2</span>
+                                </div>
+                                <div class="ml-5">
+                                    <h3>
+                                        BSC Smart Security (BSCSS)
+                                    </h3>
+                                    <p class="text-gray-700">
+                                        BSCSS is a smart security contract of BSC Protocol based marketplace payment
+                                        platform designed to make the NFT buying and selling of any good or service easy
+                                        and protected.
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="d-flex">
+                                <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                                    <span>3</span>
+                                </div>
+                                <div class="ml-5">
+                                    <h3>
+                                        Auctions
+                                    </h3>
+                                    <p class="text-gray-700">
+                                        Auction is one of the most prominent features of the BSC Station platform. This
+                                        is a highly efficient mechanism of realizing a resource configuration in the
+                                        face of inadequate information. Auctions can be categorized into three types of
+                                        procedures for auctions depending on the occurrence of a price development
+                                        during an auction run and its causes.
+                                    </p>
+                                    <ul class="text-gray-700">
+                                        <li>
+                                            Dutch auction - Partially driven by time
+                                        </li>
+                                        <li>
+                                            English auction - Driven by bidders only
+                                        </li>
+                                        <li>
+                                            Sealed bid auction - Single shot
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-12 col-md-6 col-lg-6">
+
+
+                            <div class="mb-8 mb-md-0">
+
+
+                                <img src="/img/nft-aution.png" alt="..."
+                                    class="screenshot img-fluid mw-md-100 float-right mb-6 mb-md-0">
+
+                            </div>
+
+                        </div>
+                        <div class="d-flex">
+                            <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                                <span>4</span>
+                            </div>
+                            <div class="ml-5">
+                                <h3>
+                                    Encryption algorithm
+                                </h3>
+                                <p class="text-gray-700">
+                                    BSC NFT Protocol smart contract uses the unique encryption algorithm, encrypts
+                                    all bids and ensures that all bids cannot be changed and encrypted information
+                                    is irreversible.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="badge badge-lg badge-rounded-circle badge-primary-soft mt-1">
+                                <span>5</span>
+                            </div>
+                            <div class="ml-5">
+                                <h3>
+                                    Fixed-price contract
+                                </h3>
+                                <p class="text-gray-700">
+                                    Fixed price can refer to a leg of a swap where the payments are based on a
+                                    constant interest rate, or it can refer to a negotiated price point that is not
+                                    subject to change under normal circumstances. NFT holder can sell their NFTs on
+                                    the blockchain by smart contract of BSC NFT Protocol in the form of pending
+                                    order and designate required for NFT.
+                                </p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <hr class="border-gray-300 my-6">
+
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <h2>
+                                BSCS Swap
+                            </h2>
+                            <p class="text-gray-700">
+                                BSC Swap is a decentralized exchange for swapping BEP-20 tokens on Binance Smart Chain
+                                with many
+                                other features that let user earn token and profit. BSC Swap uses an automated market
+                                maker
+                                (AMM) model where users trade against a liquidity pool.
+                            </p>
+                            <p class="text-gray-700">They can use those tokens to reclaim their share, plus a portion of
+                                the
+                                trading fees.It's faster, cheaper and anyone can use it easily even beginner</p>
+                              
+                                    <div class="col-12 col-md-6">
+
+                                        <div class="row no-gutters">
+                                            <div class="col-12">
+        
+        
+                                                <div class="p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                                    <img src="/img/swap-desktop.png" class="img-fluid" alt="...">
+                                                </div>
+        
+                                            </div>
+        
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6 docs-flex">
+        
+        
+        
+                                        <p class="text-gray-700">
+                                            The liquidity provided to the exchange comes from Liquidity Providers ("LPs") who stake their tokens in "Pools". When user make a token swap (trade) on the exchange user will pay a 0.2% trading fee, which is broken down as follows:
+                                        </p>
+                                        <p class="text-gray-700">
+                                            0.17% - Returned to liquidity pools in the form of a trading fee reward for liquidity providers.
+                                        </p>
+                                        <p class="text-gray-700">
+                                            0.03% - Sent to the BSC Swap Treasury to buy back BSCS and burn.
+                                        </p>
+                                        <a href="https://bscstation.finance" target="_blank" class="btn btn-primary-soft lift">
+                                            Launch APP
+                                        </a>
+                                    </div>
+                        </div>
+
+                    </div>
+                    <hr class="border-gray-300 my-6">
+
+
+
+                    <h3 class="font-weight-bold">
+                        Liquidity Mining
+                    </h3>
+                    <p class="text-gray-700">
+                        To encourage participation in daily token groups, we are launching a liquidity mining program
+                        for users using BSC Swap.
+
+                    </p>
+                    <p class="text-gray-700">In the way of great DeFi projects like Pancake Swap, Burger Swap ..., this
+                        program will distribute a fixed amount of BSCS tokens on a daily basis. All liquidity providers
+                        will receive BSCS from this unspecified fixed amount on a prorated
+                        basis. Unclaimed tokens will be sent back to the reward pool for later distribution.</p>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        AMM
+                    </h3>
+                    <p class="text-gray-700">
+                        Automated Market Makers allow digital assets to be traded without permission and automatically
+                        by using liquidity pools instead of a traditional market of buyers and sellers. AMMs have a
+                        different approach to trading assets.
+
+                    </p>
+                    <p class="text-gray-700">AMMs are a financial tool unique to BSC, Ethereum and DeFi. This new
+                        technology is decentralized, always available for trading, and does not rely on the traditional
+                        interaction between buyers and sellers. This new method of exchanging
+                        assets embodies the general ideals of Ethereum and crypto in general: no one entity controls,
+                        everyone can participate, and anyone can build on top of another.
+                    </p>
+
+                    <!-- <hr class="border-gray-300 my-6">
+                    <div class="container">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-md-8 docs-flex">
+                                <h2>
+                                    BSCS Stater
+                                </h2>
+                                <p class="text-gray-700">
+                                    We are building BSCS Starter as the next step for truly interoperable DeFi. A
+                                    Protocol built for
+                                    BSC token pools and auctions, enabling projects to raise capital on a decentralized
+                                    and
+                                    interoperable environment based on Binance Smart Chain.
+                                </p>
+                                <p class="text-gray-700">
+                                    Tokens in the round called ‘Initial DEX Offering’ will be issued in a fully
+                                    autonomous and
+                                    decentralized manner through the use of a smart contract based DEX. This enables
+                                    tokens in this
+                                    round to follow a predefined price curve. Instead of setting a fixed
+                                    price determined by the team, the bonding curve allows the contribution to respond
+                                    fairly to
+                                    supply and demand while setting its own market price. Participants in this round can
+                                    participate
+                                    in the contract pool by entering and
+                                    exiting as they see fit.
+                                </p>
+                                
+
+                            </div>
+                            <div class="col-12 col-md-4">
+
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+
+
+                                        <div class="p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                            <img src="/img/ending.png" class="img-fluid" alt="...">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <p class="text-gray-700">
+                                With BSCS Start, decentralized projects will be able to raise and exchange capital
+                                cheap and
+                                fast. Users will be able to participate in a secure and compliant environment and to
+                                use assets
+                                that go way beyond the current BEP-20 standard.
+                            </p>
+                            <p class="text-gray-700">
+                                Other features include permissionless listings, token swaps by smart contract,
+                                private pools
+                                with password, whitelisting and high slippage price alerts. Pools will have several
+                                types of
+                                swaps, including fixed ratio swaps, dynamic ratio swaps.
+                            </p>
+                        </div>
+
+                    </div> -->
+
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        Startpool
+                    </h3>
+
+
+                    <p class="text-gray-700">
+                        BSC Startpool helps quality NFT and non-NFT projects distribute their tokens to a wider audience
+                        while allowing crypto users and investors to generate attractive returns in a form of new
+                        tokens. This is an innovative solution that gives advantages to both users and quality crypto
+                        projects.
+                    </p>
+                    <p class="text-gray-700">
+                        Farmers can earn the new token for a total of 30 days. The first seven of those days are before
+                        the token is listed on BSC Swap, at which point farmers can immediately trade any tokens you
+                        have earned.
+                    </p>
+                    <p class="text-gray-700">
+                        The tokens farmer earn are distributed to you daily, and you can add or remove tokens you’ve
+                        subscribed to the eligible pools at any time.
+                    </p>
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-lg-10 col-sm-10 offset-sm-1">
+
+                                <div class="row" style="padding-top: 50px;">
+                                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                                        <a class="card d-md-none d-lg-flex" href="#!">
+
+                                            <div class="card-zoom">
+                                                <img class="card-img-top" src="/img/bake-pool.png" alt="...">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                                        <a class="card mb-6 mb-lg-0" href="#!">
+
+                                            <div class="card-zoom">
+                                                <img class="card-img-top" src="/img/busd-pool.png" alt="...">
+                                            </div>
+                                        </a>
+
+                                    </div>
+                                    <div class="col-12 col-md-6 col-lg-4 d-flex">
+
+                                        <a class="card mb-6 mb-lg-0" href="#!">
+
+                                            <div class="card-zoom">
+                                                <img class="card-img-top" src="/img/bnb-pool.png" alt="...">
+                                            </div>
+                                        </a>
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        BSCS Dex
+                    </h3>
+                    <p class="text-gray-700">
+                        BSCS Dex is a decentralized exchange built on top of Binance Smart Chain. BSCS Dex will
+                        implement the AMM protocol and may in the future be replaced by PMM to get the best liquidity of
+                        the Binance Smart Chain to facilitate ordering on its chain. BSCS
+                        Dex will have the full functionality of a centralized exchange but furthermore it will help
+                        users to trade actively and conveniently.
+                    </p>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        Wallet
+                    </h3>
+
+                    <p class="text-gray-700">
+                        BSCS Wallet is the official crypto currency wallet of BSC Station included: mobile wallet and
+                        extension wallet on browser. BSCS Wallet allows users to safely and conveniently store many
+                        major cryptocurrencies in the market. In addition, the platform
+                        also directly integrates many DApp applications, Art & NFT collection to help users get closer
+                        to blockchain technology.
+                    </p>
+
+
+
+                    <hr class="border-gray-300 my-6">
+
+                    <h1 class="mb-1">
+                        BSC Station Tokenomics (BSCS - BEP20)
+                    </h1>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold">
+                        BSCS Token (BSCS - BEP20)
+                    </h3>
+                    <p class="text-gray-700">
+                        BSC Station has only raised the most necessary funds for Product Development and to help the
+                        BSCS ecosystem grow sustainably, bringing more value to users through our mainstream products
+                    </p>
+                    <p class="text-gray-700">All allocation for Team member, Advisors, Partner and Foundation tokens are
+                        locked for at least 1 year, the rest of the tokens are allocated to the community via Token
+                        sale, Bounty and Airdrop, Liquidity Provision and rewards as well
+                        as Marketing actions.</p>
+
+                    <hr class="border-gray-300 my-6">
+
+
+
+                    <div class="container" id="bscs">
+                        <div class="row align-items-center justify-content-between">
+                            <div class="col-12 col-md-6">
+
+                                <div class="row no-gutters">
+                                    <div class="col-12">
+
+
+                                        <div class="p-1 aos-init aos-animate" data-aos="fade-up" data-aos-delay="100">
+                                            <img src="/img/logobscs.png" class="img-fluid" alt="...">
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <h2>
+                                    Token Specification (BSCS - BEP20)
+                                </h2>
+                                <ul class="text-gray-700">
+                                    <li>
+                                        Name: BSCS token
+                                    </li>
+                                    <li>
+                                        Symbol: BSCS
+                                    </li>
+                                    <li>
+                                        Total supply: 500,000,000 BSCS
+                                    </li>
+            
+                                    <li>
+                                        Standard: BEP-20
+                                    </li>
+                                    <li>
+                                        Precision: 18
+                                    </li>
+                                    <li>
+                                        Network: Binance Smart Chain
+                                    </li>
+                                    <li>
+                                        Smart Contract Address: <a href="https://bscscan.com/token/0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d" target="_blank">0xbcb24afb019be7e93ea9c43b7e22bb55d5b7f45d</a>
+                                    </li>
+                                </ul>
+            
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold" id="bscsa">Token Allocation (BSCS - BEP20)</h3>
+                    <p class="text-gray-700">
+                    </p>
+                    <ul class="text-gray-700">
+
+                        <li>
+                            Seed sale (12%): 60,000,000 BSCS
+                        </li>
+                        <li>
+                            Private-sale (25%): 125,000,000 BSCS
+                        </li>
+                        <li>
+                            IDO (1.6%): 8,000,000 BSCS
+                        </li>
+                        <li>
+                            Farming / staking reward (12%): 60,000,000 BSCS
+                        </li>
+                        <li>
+                            Team (15%): 75,000,000 BSCS
+                        </li>
+                        <li>
+                            Marketing (8.4%): 42,000,000 BSCS
+                        </li>
+                        <li>
+                            Advisor & Partnership (5%): 25,000,000 BSCS
+                        </li>
+                        <li>
+                            Liquidity (10%): 50,000,000 BSCS
+                        </li>
+                        <li>
+                            Ecosystem (11%): 55,000,000 BSCS
+                        </li>
+                    </ul>
+                    <figure class="highcharts-figure">
+                        <div id="Allocation"></div>
+                    </figure>
+
+
+                   
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold" id="gulpFileIncludes">
+                        BSCS Market Cap and Release Schedule
+                    </h3>
+                    <p class="text-gray-700" id="MarketCap">
+                        Market Cap
+                    </p>
+                    <div class="table-response">
+                        <table class="table table-bordered">
+                            <thead style="background: #e4d354;">
+                                <tr>
+                                    <th scope="col">Round</th>
+                                    <th scope="col">Token price</th>
+                                    <th scope="col">Token sale</th>
+                                    <th scope="col">Raised</th>
+                                    <th scope="col">Date</th>
+                                    <th scope="col">Status</th>
+                                    <th scope="col">Fully Diluted Market</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Seed</th>
+                                    <td>$0.0025</td>
+                                    <td>60,000,000</td>
+                                    <td>$150,000</td>
+                                    <td>Mar-2021</td>
+                                    <td>Finished</td>
+                                    <td>$1,250,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Private</th>
+                                    <td>$0.005</td>
+                                    <td>125,000,000</td>
+                                    <td>$625,000</td>
+                                    <td>Mar-2021</td>
+                                    <td>Finished</td>
+                                    <td>$2,500,000</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Public</th>
+                                    <td>$0.01</td>
+                                    <td>8,000,000</td>
+                                    <td>$80,000</td>
+                                    <td>April-2021</td>
+                                    <td>Finished</td>
+                                    <td>$5,000,000</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="TokenReleaseSchedule">
+                        Token Release Schedule
+                    </p>
+                    <div class="table-response">
+                        <table class="table table-bordered">
+                            <thead style="background: #e4d354;">
+                                <tr>
+                                    <th scope="col">Allocation</th>
+                                    <th scope="col">Amount</th>
+                                    <th scope="col">Percentage</th>
+                                    <th scope="col">Raised</th>
+                                    <th scope="col">Descriptions</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th scope="row">Seed</th>
+                                    <td>60,000,000</td>
+                                    <td>12</td>
+                                    <td>$150,000</td>
+                                    <td>Unlock 10% before listing, 2 month cliff, then linear till the 12th month</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Private</th>
+                                    <td>125,000,000</td>
+                                    <td>25</td>
+                                    <td>$625,000</td>
+                                    <td>
+                                        Unlock 15% before listing, 2 month cliff, then linear till the 12th month</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Public</th>
+                                    <td>8,000,000</td>
+                                    <td>1.6</td>
+                                    <td>$80,000</td>
+                                    <td>Unlock 100% before listing.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Farming / staking</th>
+                                    <td>60,000,000</td>
+                                    <td>12</td>
+                                    <td></td>
+                                    <td>7.5% per quarter, start unlock when  Staking program goes live </td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Marketing</th>
+                                    <td>42,000,000</td>
+                                    <td>8.4</td>
+                                    <td></td>
+                                    <td>
+                                        Unlock 10% before listing, then linear two yrs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Liquidity</th>
+                                    <td>50,000,000</td>
+                                    <td>10</td>
+                                    <td></td>
+                                    <td>Unlock 20% before listing, then 6.67% monthly over 12 months.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Ecosystem</th>
+                                    <td>55,000,000</td>
+                                    <td>11</td>
+                                    <td></td>
+                                    <td>Linear 5 yrs</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Team</th>
+                                    <td>75,000,000</td>
+                                    <td>15</td>
+                                    <td></td>
+                                    <td>
+                                        Lock 06 months, then 10% per quarter.</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Advisor & Partnership</th>
+                                    <td>25,000,000</td>
+                                    <td>5</td>
+                                    <td></td>
+                                    <td>
+                                        Lock 06 months, then 25% per quarter.</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="BSCSStationHolderBenefits">
+                        BSC Station Holder Benefits
+                    </p>
+                    <ul class="text-gray-700">
+                        <p class="text-gray-700">
+                            The benefits of BSCS Hodler? Here is a quick overview.
+                        </p>
+                        <ul>
+                            <li>
+                                <code>GET FREE TOKEN BSC Swap</code> - Hodlers holding BSCS token will receive another
+                                free token
+                            </li>
+                            <li>
+                                <code>UNLOCK NFT AUCTION</code> - BSCS tokens will be used to pay as Auction fee,
+                                transaction, and also for NFT access behind paywall.
+                            </li>
+                            <li>
+                                <code>VOTING</code> - Hodlers holding BSCS or more can vote to approve or reject
+                                projects on BSCS IDO
+                            </li>
+                            <li>
+                                <code>SHARING TRANSACTION FEE</code> - Hodlers holding BSCS will share their transaction
+                                fees
+                            </li>
+                            <li>
+                                <code>IDO DISCOUNT</code> - Those who own BSCS will automatically qualify for a 10%
+                                discount on the IDO sale price.
+                            </li>
+                            <li>
+                                <code>PAYMENT</code> - Use BSCS as a payment method at the service points within BSCS
+                                ecosystem in the near future.
+                            </li>
+                            <li>
+                                <code>FUTURE BENEFITS</code> - There are many other benefits of BSCS Hodler that we are
+                                building and researching for early implementation.
+                            </li>
+
+                        </ul>
+                    </ul>
+                    <hr class="border-gray-300 my-6">
+                    <p class="text-gray-700" id="Usageoffundsraised">
+                        Usage of funds raised
+                    </p>
+                    <ul class="text-gray-700">
+                        <ul>
+                            <li>
+                                Products development: 40%
+                            </li>
+                            <li>
+                                Liquidity and Exchange: 30%
+                            </li>
+                            <li>
+                                Ecosystem: 20%
+                            </li>
+                            <li>
+                                Operation: 10%
+                            </li>
+
+
+                        </ul>
+                    </ul>
+
+
+                    <hr class="border-gray-300 my-6">
+                    <h3 class="font-weight-bold" id="Community">Community </h3>
+
+
+                    <p class="text-gray-700">
+                        Official Community BSC Station
+                    </p>
+
+
+                    <ul class="text-gray-700">
+                        <li>
+                            Twitter: <a href="https://twitter.com/bscstation" target="_blank"> BSCStaion - Twitter</a>
+                        </li>
+                        <li>
+                            Medium: <a href="https://bscstation.medium.com/" target="_blank"> BSCStaion - Medium</a>
+                        </li>
+                        <li>
+                            Telegram Channel: <a href="https://t.me/bscstation_media" target="_blank"> BSCStaion -
+                                Telegram Channel
+                            </a>
+                        </li>
+                        <li>
+                            Telegram Group: <a href="https://t.me/bscstation" target="_blank"> BSCStaion - Telegram
+                                Group</a>
+                        </li>
+
+                    </ul>
+
+                </div>
+                <div class="col-12 col-lg-3 col-xl-2 d-none d-lg-block px-lg-0 sidenav sidenav-right">
+                    <div class="my-7 my-lg-9 px-lg-7 border-left-lg border-gray-300">
+
+
+                        <h6 class="text-uppercase font-weight-bold">
+                            CONTENTS
+                        </h6>
+
+
+                        <ul class="list mb-0">
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Introduction"
+                                    data-toggle="smooth-scroll">Introduction</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#WhyBSCSStation"
+                                    data-toggle="smooth-scroll">Why BSC Station?
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#BSCSwapIntroduction"
+                                    data-toggle="smooth-scroll">BSC Swap Introduction?
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Products"
+                                    data-toggle="smooth-scroll">Products?
+                                </a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscs" data-toggle="smooth-scroll">BSC Station
+                                    Specification</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#bscsa" data-toggle="smooth-scroll">BSC Station
+                                    Allocation
+                                </a>
+                            </li>
+                           
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#whybinance" data-toggle="smooth-scroll">Why
+                                    Binance Smart
+                                    Chain</a>
+                            </li>
+                            <li class="list-item">
+                                <a class="list-link" target="_top" href="#Community"
+                                    data-toggle="smooth-scroll">Community</a>
+                            </li>
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <a id="scroll-top"></a>
+    <script src="/libs/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="..//js/theme.min.js"></script>
+    <script>
+        var btn = $('#scroll-top');
+
+        $(window).scroll(function () {
+            if ($(window).scrollTop() > 300) {
+                btn.addClass('show');
+            } else {
+                btn.removeClass('show');
+            }
+        });
+
+        btn.on('click', function (e) {
+            e.preventDefault();
+            $('html, body').animate({
+                scrollTop: 0
+            }, '300');
+        });
+    </script>
+    <script>
+        window.onscroll = function () {
+            myFunction()
+        };
+
+        var header = document.getElementById("myHeader");
+        var sticky = header.offsetTop;
+
+        function myFunction() {
+            if (window.pageYOffset > sticky) {
+                header.classList.add("sticky");
+            } else {
+                header.classList.remove("sticky");
+            }
+        }
+    </script>
+    <script src="https://code.highcharts.com/highcharts.js"></script>
+    <script src="https://code.highcharts.com/modules/exporting.js"></script>
+    <script src="https://code.highcharts.com/modules/export-data.js"></script>
+    <script src="https://code.highcharts.com/modules/accessibility.js"></script>
+    <script src="https://code.highcharts.com/highcharts-3d.js"></script>
+    <script>Highcharts.chart('Allocation', {
+        chart: {
+            type: 'pie',
+            options3d: {
+                enabled: true,
+                alpha: 45
+            }
+        },
+        title: {
+            text: 'Token Allocation (BSCStation Token)'
+        },
+        subtitle: {
+            text: ''
+        },
+        plotOptions: {
+            pie: {
+                innerSize: 100,
+                depth: 45
+            }
+        },
+        series: [{
+            name: 'Percentage',
+            data: [
+                ['Seed sale', 12],
+                ['Private-sale', 25],
+                ['IDO', 1.6],
+                ['Farming / staking reward', 12],
+                ['Team', 15],
+                ['Marketing', 8.4],
+                ['Advisor & Partnership', 5],
+                ['Liquidity', 10],
+                ['Ecosystem', 11]
+            ]
+        }]
+    });
+</script>
+    <script>
+        Highcharts.chart('Allocationswap', {
+            chart: {
+                plotBackgroundColor: null,
+                plotBorderWidth: null,
+                plotShadow: false,
+                type: 'pie'
+            },
+            title: {
+                text: 'Token Allocation (BSC Swap Token)'
+            },
+            tooltip: {
+                pointFormat: '{series.name}: <b>{point.percentage:.1f}%</b>'
+            },
+            accessibility: {
+                point: {
+                    valueSuffix: '%'
+                }
+            },
+            plotOptions: {
+                pie: {
+                    allowPointSelect: true,
+                    cursor: 'pointer',
+                    dataLabels: {
+                        enabled: false
+                    },
+                    showInLegend: true
+                }
+            },
+            series: [{
+                name: 'Brands',
+                colorByPoint: true,
+                data: [{
+                    name: 'Community Mass Adoption',
+                    y: 50,
+                    color: '#1F4B9A',
+                    sliced: true,
+                    selected: true
+                }, {
+                    name: 'Trading reward',
+                    y: 20,
+                    color: '#4C7AF3'
+                }, {
+                    name: 'Farming/staking',
+                    y: 20,
+                    color: '#4FCCFF'
+                }, {
+                    name: 'Marketing',
+                    y: 10,
+                    color: '#45CBA4'
+                }]
+            }]
+        });
+    </script>
+</body>
+
+
+
+</html>
